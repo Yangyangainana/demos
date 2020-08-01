@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en_US" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8"/>
+    <title>Edelmond</title>
+    <link rel="icon" th:href="@{/img/icon.jpg}" type="image/x-icon" />
+    <link rel="shortcut icon" th:href="@{/img/icon.jpg}" type="image/x-icon"/>
+    <style type="text/css">
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        .head {
+            height: 75px;
+        }
+        .head #option-box {
+            height: 75px;
+            width: 70%;
+            float: left;
+        }
+        .head-option {
+            margin-left: 12%;
+            margin-top: 30px;
+            float: left;
+        }
+        .head-option .text-style {
+            font-size: 21px;
+            color: black;
+            text-decoration: none;
+        }
+        .head-option .text-style:hover {
+            target: "_blank";
+            font-size: 21px;
+            color: gray;
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+<!-- 顶部导航+logo -->
+<div id="head" class="head">
+    <div id="logo-div" style="height: 100%;width: 30%;float: left">
+        <img id="logo-img" th:src="@{/img/logo-fit.jpg}" style="height: 100%" />
+    </div>
+    <div id="option-box">
+        <div class="head-option">
+            <a href="#" class="text-style" target="_blank">首页</a>
+        </div>
+        <!-- 门店信息参考兰蔻官网 当鼠标点击后，用另一个banner部分覆盖原有的banner，并且文字下方出现小三角 -->
+        <div class="head-option">
+            <a href="#" class="text-style" target="_blank">门店</a>
+        </div>
+        <!-- 联系方式参考兰蔻官网 当鼠标点击后，用另一个banner部分覆盖原有的banner，并且文字下方出现小三角 -->
+        <div class="head-option">
+            <a href="#" class="text-style" target="_blank">联系方式</a>
+        </div>
+        <div class="head-option">
+            <a href="#" class="text-style" target="_blank">关于我们</a>
+        </div>
+    </div>
+</div>
+
+<div>
+    <!--<img id="logo-img2" th:src="@{~/img/0.jpg}" style=";width: 100%" alt="该图片无法访问"/>-->
+    <img id="logo-img2" th:src="@{/img/0.jpg}" style=";width: 100%" alt="该图片无法访问"/>
+</div>
+
+<div id="example-show" style="margin-top: 20px;height: 1700px;float: none">
+    <p style="margin-top: 30px;font-size: 45px;text-align: center">
+        <b>精 &nbsp 选</b>
+    </p>
+    <div style="margin-top: 20px;height: auto;alignment: center">
+        <div style="float: left;width: 30%;margin-left: 5%;text-align: center">
+            <img th:src="@{/img/example/1.jpg}" />
+        </div>
+        <div style="float: left;width: 30%;text-align: center">
+            <img th:src="@{/img/example/2.jpg}" />
+        </div>
+        <div style="float: left;width: 30%;text-align: center;margin-right: 5%">
+            <img th:src="@{/img/example/3.jpg}" />
+        </div>
+    </div>
+    <div style="margin-top: 20px;height: auto">
+        <div style="float: left;width: 30%;margin-left: 5%;margin-top: 10px;text-align: center">
+            <img th:src="@{/img/example/4.jpg}" />
+        </div>
+        <div style="float: left;width: 30%;margin-top: 10px;text-align: center">
+            <img th:src="@{/img/example/10.jpg}" />
+        </div>
+        <div style="float: left;width: 30%;margin-top: 10px;text-align: center;margin-right: 5%">
+            <img th:src="@{/img/example/11.jpg}" />
+        </div>
+    </div>
+</div>
+
+
+<div id="fashion-show" style="margin-top: 20px;height: 1700px;float: none">
+    <p style="margin-top: 40px;font-size: 45px;text-align: center;">
+        <b>时 &nbsp 尚</b>
+    </p>
+    <div style="margin-top: 20px;height: auto;alignment: center">
+        <div style="float: left;width: 30%;margin-left: 5%;text-align: center">
+            <img th:src="@{/img/example/1.jpg}" />
+        </div>
+        <div style="float: left;width: 30%;text-align: center">
+            <img th:src="@{/img/example/2.jpg}" />
+        </div>
+        <div style="float: left;width: 30%;text-align: center">
+            <img th:src="@{/img/example/3.jpg}" />
+        </div>
+    </div>
+    <div style="margin-top: 20px;height: auto">
+        <div style="float: left;width: 30%;margin-left: 5%;margin-top: 10px;text-align: center">
+            <img th:src="@{/img/example/4.jpg}" />
+        </div>
+        <div style="float: left;width: 30%;margin-top: 10px;text-align: center">
+            <img th:src="@{/img/example/10.jpg}" />
+        </div>
+        <div style="float: left;width: 30%;margin-right:5%;margin-top: 10px;text-align: center">
+            <img th:src="@{/img/example/11.jpg}" />
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
